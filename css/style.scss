@@ -1,0 +1,436 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     color: #0d0d0d;
+     text-decoration: none;
+     border: none;
+     list-style-type: none;
+     outline: none;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'IBMPlexSans';
+ }
+ 
+ @font-face {
+     font-family: robmed;
+     src: url(../assets/Roboto-Medium.ttf);
+ }
+ 
+ @font-face {
+     font-family: robbold;
+     src: url(../assets/Roboto-Bold.ttf);
+ }
+ 
+ @font-face {
+     font-family: psreg;
+     src: url(../assets/PressStart2P-Regular.ttf);
+ }
+ 
+ @font-face {
+     font-family: roblig;
+     src: url(../assets/Roboto-Light.ttf);
+ }
+ 
+ @font-face {
+     font-family: robreg;
+     src: url(../assets/Roboto-Regular.ttf);
+ }
+ 
+ $maincolor: #393939;
+ $seccolor: #6F6F6F;
+ .dfc {
+     display: flex;
+     flex-direction: column;
+ }
+ .modal {
+            
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            
+            
+        }
+        .adm1 {
+            display: flex;
+            text-align: center;
+            padding: 10px;
+            color: #393939;
+            font-family: robreg;
+            font-size: 16px;
+            border: 1px solid #A7A7A7;
+            border-radius: 10px;
+            background-color: #A7A7A7;
+        }
+        .img {
+            gap: 10px;
+            padding: 0px 10px 0px 10px;
+            font-size: 10px;
+            width: 300px;
+            height: 129px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            p {
+                font-family: robreg;
+                font-size: 12px;
+                color: #393939;
+            }
+        }
+        
+
+        .modal-content {
+            gap: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 10px;
+            border: 1px solid #888;
+            width: 320px;
+            height: 409px;
+            
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .personal-info {
+            
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            gap: 10px;
+        }
+        .pi {
+            padding: 10px;
+            color: #393939;
+            font-family: robreg;
+            font-size: 16px;
+            border: 1px solid #A7A7A7;
+            border-radius: 10px;
+        }
+        .adm {
+            padding: 10px;
+            color: #393939;
+            font-family: robreg;
+            font-size: 16px;
+            border: 1px solid #A7A7A7;
+            border-radius: 10px;
+            background-color: #FFBB75;
+        }
+        .change {
+            align-items: center;
+            text-align: center;
+            background-color: green;
+            width: 100%;
+            padding: 10px;
+            color: #ffff;
+            font-family: robreg;
+            font-size: 16px;
+            border: 1px solid #A7A7A7;
+            border-radius: 10px;  
+        }
+        
+ .dfr {
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ .addtask {
+     padding: 10px 0;
+     gap: 10px;
+     align-items: center;
+     p {
+         font-family: robreg;
+         font-size: 16px;
+         color: #754F19;
+     }
+ }
+.none {
+    background-color: #FFF8EB;
+    border-radius: none;
+    gap: 10px;
+    color: #393939;
+}
+ 
+ .neyt {
+     background-color: #FAE6D2;
+ }
+ 
+ .orange {
+     background-color: #FFBB75;
+ }
+ 
+ .green {
+     background-color: #AAF3A6;
+ }
+ 
+ .red {
+     background-color: #D84544;
+ }
+ 
+ .complexity {
+     width: 120px;
+ }
+ 
+ .workstat {
+     width: 140px;
+ }
+ 
+ .flags {
+     width: 160px;
+ }
+ 
+ .incg10 {
+     gap: 10px;
+ }
+ 
+ .pad10 {
+     padding: 10px 0;
+ }
+ button {
+    padding: 10px;
+    background-color: #FFA548;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: robmed;
+}
+ 
+ body {
+     width: 100%;
+     height: 1080px;
+     header {
+         width: 100%;
+         justify-content: space-between;
+         height: 108px;
+         padding: 10px 30px;
+         align-items: center;
+         background-color: #FFF8EB;
+         .logo {
+             width: 17%;
+             display: flex;
+             padding: 10px;
+             .cont_logo {
+                 align-items: center;
+                 gap: 16px;
+                 p {
+                     font-family: psreg;
+                     font-size: 16 px;
+                     color: #FF8200;
+                 }
+             }
+         }
+         .search {
+             width: 70%;
+             height: 56px;
+             padding: 5px 16px;
+             align-items: center;
+             gap: 10px;
+             border-radius: 20px;
+             background-color: #ffffff;
+             input {
+                 font-family: robmed;
+                 width: 100%;
+                 color: $seccolor;
+                 font-size: 20px;
+             }
+         }
+         .profile {
+             gap: 10px;
+             padding: 10px 24px 10px 10px;
+             
+             .profilebox {
+                 gap: 8px;
+                 width: 100%;
+                 align-items: center;
+                 p {
+                     font-family: robbold;
+                     font-size: 18px;
+                     color: $maincolor;
+                 }
+             }
+         }
+     }
+     .main {
+         height: 100%;
+         background-color: #FFF8EB;
+         .navbox {
+             display: flex;
+             padding: 10px;
+             .navbar {
+                 padding: 20px;
+                 background-color: #FFD3A6;
+                 height: 80%;
+                 border-radius: 30px;
+                 .proj {
+                     padding: 10px 0;
+                     .taskbox {
+                         gap: 8px;
+                         .addtask {
+                             padding: 8px 0 8px 10px;
+                             justify-content: space-between;
+                             .textbox {
+                                 display: flex;
+                                 padding: 0 10px;
+                             }
+                         }
+                     }
+                 }
+                 .gap {
+                     gap: 10px;
+                 }
+             }
+         }
+         .about {
+             width: 100%;
+             height: 100%;
+             padding: 0 64px;
+             .incomming {
+                 width: 100%;
+                 padding: 16px 0;
+                 .upcom {
+                     gap: 10px;
+                     .date {
+                         display: flex;
+                         padding: 10px 10px 5px 10px;
+                     }
+                 }
+                 .addtasks {
+                     .textbox {
+                         border-top: 1px solid #A7A7A7;
+                         padding: 10px;
+                         gap: 10px;
+                         align-items: center;
+                         p {
+                             font-size: 16px;
+                             font-family: robreg;
+                             color: #FFA548;
+                         }
+                     }
+                 }
+             }
+             .addtask2 {
+                 align-items: center;
+                 justify-content: space-between;
+                 padding: 10px;
+                 h3 {
+                     font-family: 'robbold';
+                     font-size: 32px;
+                 }
+             }
+             .addtask {
+                 padding: 10px;
+                 gap: 10px;
+                 align-items: center;
+                 background-color: #FFA548;
+                 border-radius: 40px;
+                 p {
+                     font-family: robmed;
+                     font-size: 16px;
+                     color: #ffffff;
+                 }
+             }
+             .filter {
+                 padding: 10px;
+                 gap: 10px;
+                 align-content: center;
+                 align-items: center;
+             }
+             .grey {
+                 p {
+                     font-size: 16px;
+                     font-family: robmed;
+                     color: #959595;
+                 }
+             }
+             .date {
+                 gap: 10px;
+                 padding: 0 10px;
+                 p {
+                     font-size: 16px;
+                     font-family: roblig;
+                     color: $maincolor;
+                 }
+             }
+             .boxtasks {
+                 .tasks {
+                     justify-content: space-between;
+                     padding: 10px 0;
+                     width: 100%;
+                     border-top: 1px solid #6F6F6F;
+                     .boxtaskinf {
+                         gap: 4px;
+                         align-items: start;
+                         .info {
+                             padding: 4px 10px 4px 10px;
+                             gap: 8px;
+                             justify-content: space-between;
+                             width: 100%;
+                             .pbig {
+                                 font-family: robmed;
+                                 font-size: 16px;
+                                 color: $maincolor;
+                             }
+                             .psmall {
+                                 font-family: roblig;
+                                 font-size: 14px;
+                                 color: $maincolor;
+                             }
+                         }
+                     }
+                     .info-2 {
+                         gap: 10px;
+                         .status {
+                             padding: 4px 10px;
+                             gap: 10px;
+                             align-items: center;
+                             border-radius: 49px;
+                             justify-content: center;
+                             p {
+                                 font-size: 14px;
+                                 font-family: robbold;
+                                 color: #393939;
+                             }
+                         }
+                     }
+                     .boxspis {
+                         height: 100%;
+                         width: 35%;
+                         justify-content: space-between;
+                         .spisok {
+                             gap: 10px;
+                             padding: 4px 10px 4px 10px;
+                             justify-content: center;
+                             li {
+                                 font-family: robmed;
+                                 font-size: 14px;
+                                 color: $seccolor;
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }

@@ -189,7 +189,129 @@
                         <div class="dfr boxtaskinf">
                             <img src="../icons/krug.svg">
                             <div class="dfc info">
-                                <p class="pbig">Name</p>
+                                <button id="openPopUp" class="bbig">Name</button>
+                                <div id="myModal1" class="modal">
+                                    <div class="modal-content1">
+                                        <span class="close1"></span>
+                                        <div class="main1">
+                                            <div class="up">
+                                                <div class="workbox">
+                                                    <img src="../icons/shash.svg" alt="hach">
+                                                    <p>Работа</p>
+                                                </div>
+                                                <div class="navbut">
+                                                    <img src="../icons/3tochki.svg" alt="more">
+                                                    <img src="../icons/sdel.svg" alt="del">
+                                                </div>
+                                            </div>
+                                            <div class="down">
+                                                <div class="left">
+                                                    <div class="himg">
+                                                        <img src="../icons/krug.svg" alt="krug">
+                                                    </div>
+                                                    <div class="block">
+                                                        <div class="bname">
+                                                            <p>Name</p>
+                                                        </div>
+                                                        <div class="btext">
+                                                            <p>Описание фывфывфывфвфывфывфывфывфывфывфыв</p>
+                                                        </div>
+                                                        <div class="bchat">
+                                                            <p>Чат</p>
+                                                        </div>
+                                                        <div class="bcom">
+                                                            <img src="../img/photoava.png" alt="img">
+                                                            <div class="binp">
+                                                                <input type="text" placeholder="Комментировать">
+                                                                <img src="../icons/screp.svg" alt="srep">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="right">
+                                                    <div class="navbar1">
+                                                        <div class="textbox">
+                                                            <p>Проект</p>
+                                                            <div class="boxtext">
+                                                                <img src="../icons/ghash.svg" alt="hash">
+                                                                <p>Работа</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="../icons/opalka.svg" alt="slash">
+                                                        <div class="textbox">
+                                                            <p>Срок выполнения</p>
+                                                            <div class="boxtext">
+                                                                <img src="../icons/date.svg" alt="date">
+                                                                <p>Time</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="../icons/opalka.svg" alt="slash">
+                                                        <div class="textbox">
+                                                            <p>Приоритет</p>
+                                                            <div class="boxtext">
+                                                                <img src="../icons/flag.svg" alt="hash">
+                                                                <p>Приоритет</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="../icons/opalka.svg" alt="slash">
+                                                        <div class="textbox">
+                                                            <p>Сложность</p>
+                                                            <div class="boxtext">
+                                                                <img src="../icons/sloj.svg" alt="hash">
+                                                                <p>Сложность</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="../icons/opalka.svg" alt="slash">
+                                                        <div class="textbox">
+                                                            <p>Статус</p>
+                                                            <div class="boxtext">
+                                                                <img src="../icons/status.svg" alt="hash">
+                                                                <p>Статус</p>
+                                                            </div>
+                                                        </div>
+                                                        <img src="../icons/opalka.svg" alt="slash">
+                                                        <div class="people">
+                                                            <p>Пользователи</p>
+                                                            <div class="bpeop">
+                                                                <div class="name">
+                                                                    <img src="../icons/people.svg" alt="people">
+                                                                    <p>Pablo</p>
+                                                                </div>
+                                                                <div class="bclas">
+                                                                    <div class="boxclass">
+                                                                        <p>Пм</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bpeop">
+                                                                <div class="name">
+                                                                    <img src="../icons/people.svg" alt="people">
+                                                                    <p>name</p>
+                                                                </div>
+                                                                <div class="bclas">
+                                                                    <div class="boxclass">
+                                                                        <p>Дизайнер</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bpeop">
+                                                                <div class="name">
+                                                                    <img src="../icons/people.svg" alt="people">
+                                                                    <p>Stive</p>
+                                                                </div>
+                                                                <div class="bclas">
+                                                                    <div class="boxclass">
+                                                                        <p>Фронт</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <p class="psmall">Описание</p>
                                 <div class=" dfr info-2">
                                     <div class="dfr neyt status">
@@ -225,14 +347,17 @@
         </div>
     </div>
     <script>
-        const modal1 = document.getElementById("myModal");
+        const openModalBtn = document.getElementById('openPopUp');
+        const modal1 = document.getElementById('myModal1');
+        const modal = document.getElementById("myModal");
         const modal2 = document.getElementById("myModal2");
         const btn1 = document.getElementById("openModal");
         const btn2 = document.getElementById("changeModal");
-        const closes = document.querySelectorAll(".close"); 
+        const closes = document.querySelectorAll(".close");
+        const closeBtn = document.querySelector('.close');
 
         btn1.onclick = function() {
-            modal1.style.display = "block";
+            modal.style.display = "block";
         }
 
         btn2.onclick = function() {
@@ -248,10 +373,26 @@
 
         window.onclick = function(event) {
             if (event.target == modal1 || event.target == modal2) {
-                modal1.style.display = "none";
+                modal.style.display = "none";
                 modal2.style.display = "none";
             }
         }
+                openModalBtn.addEventListener('click', () => {
+        modal1.classList.add('show'); 
+        modal1.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+        modal1.classList.remove('show'); 
+        modal1.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+        if (event.target === modal1) {
+            modal1.classList.remove('show');
+            modal1.style.display = 'none';
+        }
+        });
     </script>
 </body>
 

@@ -44,6 +44,191 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.modal .modal-content1 {
+  gap: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 742px;
+  height: 604px;
+}
+.modal .main1 {
+  display: flex;
+  flex-direction: column;
+  width: 740px;
+  background-color: #FFFEFD;
+  height: 600px;
+}
+.modal .main1 .up {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #F4E9BF 1px solid;
+}
+.modal .main1 .up .workbox {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 10px;
+  gap: 10px;
+  align-items: center;
+}
+.modal .main1 .up .workbox p {
+  font-size: 16px;
+  font-family: robmed;
+  color: #6E6E6E;
+}
+.modal .main1 .up .navbut {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 10px;
+  gap: 22px;
+}
+.modal .main1 .down {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.modal .main1 .down .left {
+  display: flex;
+  flex-direction: row;
+  width: 524px;
+}
+.modal .main1 .down .left .himg {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.modal .main1 .down .left .block {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  width: 100%;
+}
+.modal .main1 .down .left .block .bname {
+  height: 36px;
+  display: flex;
+  align-items: flex-end;
+}
+.modal .main1 .down .left .block .bname p {
+  font-size: 20px;
+  font-family: robmed;
+  color: #393939;
+}
+.modal .main1 .down .left .block .btext {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: #DADADA 1px solid;
+}
+.modal .main1 .down .left .block .btext p {
+  font-size: 16px;
+  font-family: robreg;
+  color: #6E6E6E;
+}
+.modal .main1 .down .left .block .bchat p {
+  font-size: 16px;
+  font-family: robmed;
+  color: #6E6E6E;
+}
+.modal .main1 .down .left .block .bcom {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  padding: 10px 10px 10px 0;
+  gap: 10px;
+}
+.modal .main1 .down .left .block .bcom .binp {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 99px;
+  border: #F4E9BF 1px solid;
+}
+.modal .main1 .down .right {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 18px;
+  width: 218px;
+  background-color: #FFF8EB;
+}
+.modal .main1 .down .right .navbar1 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.modal .main1 .down .right .navbar1 .textbox {
+  display: flex;
+  flex-direction: column;
+}
+.modal .main1 .down .right .navbar1 .textbox p {
+  font-size: 14px;
+  font-family: robreg;
+  color: #6E6E6E;
+}
+.modal .main1 .down .right .navbar1 .textbox .boxtext {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 4px 0;
+  gap: 10px;
+}
+.modal .main1 .down .right .navbar1 .textbox .boxtext p {
+  font-size: 16px;
+  font-family: robmed;
+  color: #393939;
+}
+.modal .main1 .down .right .navbar1 .people {
+  display: flex;
+  flex-direction: column;
+}
+.modal .main1 .down .right .navbar1 .people p {
+  font-size: 14px;
+  font-family: robreg;
+  color: #6E6E6E;
+}
+.modal .main1 .down .right .navbar1 .people .bpeop {
+  display: flex;
+  flex-direction: row;
+  padding: 4px 0;
+  justify-content: space-between;
+}
+.modal .main1 .down .right .navbar1 .people .bpeop .name {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.modal .main1 .down .right .navbar1 .people .bpeop .bclas {
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.modal .main1 .down .right .navbar1 .people .bpeop .bclas .boxclass {
+  background-color: #FAE6D2;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 .adm1 {
   display: flex;
@@ -391,6 +576,16 @@ body .main .about .boxtasks .tasks .boxtaskinf .info .psmall {
   font-family: roblig;
   font-size: 14px;
   color: #393939;
+}
+body .main .about .boxtasks .tasks .boxtaskinf .info .bbig {
+  padding: 0px;
+  display: flex;
+  gap: 10px;
+  font-family: robmed;
+  font-size: 16px;
+  color: #393939;
+  background-color: #FFF8EB;
+  text-align: start;
 }
 body .main .about .boxtasks .tasks .info-2 {
   gap: 10px;

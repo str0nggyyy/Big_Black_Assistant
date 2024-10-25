@@ -41,6 +41,195 @@
      display: flex;
      flex-direction: column;
  }
+.modal {
+            
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+.modal-content1 {
+        gap: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 10px;
+        border: 1px solid #888;
+        width: 742px;
+        height: 604px;
+        
+}
+                                    .main1 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    width: 740px;
+                                    background-color: #FFFEFD;
+                                    height: 600px;
+                                    .up {
+                                    display: flex;
+                                    flex-direction: row;
+                                    padding: 8px 10px;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    border-bottom: #F4E9BF 1px solid;
+                                    .workbox {
+                                    display: flex;
+                                    flex-direction: row;
+                                    padding: 8px 10px;
+                                    gap: 10px;
+                                    align-items: center;
+                                    p {
+                                    font-size: 16px;
+                                    font-family: robmed;
+                                    color: #6E6E6E;
+                                    }
+                                    }
+                                    .navbut {
+                                    display: flex;
+                                    flex-direction: row;
+                                    padding: 8px 10px;
+                                    gap: 22px;
+                                    }
+                                    }
+                                    .down {
+                                    display: flex;
+                                    flex-direction: row;
+                                    height: 100%;
+                                    .left {
+                                    display: flex;
+                                    flex-direction: row;
+                                    width: 524px;
+                                    .himg {
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding: 10px;
+                                    }
+                                    .block {
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding: 0 10px;
+                                    width: 100%;
+                                    .bname {
+                                    height: 36px;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    p {
+                                    font-size: 20px;
+                                    font-family: robmed;
+                                    color: #393939;
+                                    }
+                                    }
+                                    .btext {
+                                    display: flex;
+                                    padding: 10px 0;
+                                    border-bottom: #DADADA 1px solid;
+                                    p {
+                                    font-size: 16px;
+                                    font-family: robreg;
+                                    color: #6E6E6E;
+                                    }
+                                    }
+                                    .bchat {
+                                    p {
+                                    font-size: 16px;
+                                    font-family: robmed;
+                                    color: #6E6E6E;
+                                    }
+                                    }
+                                    .bcom {
+                                    display: flex;
+                                    flex-direction: row;
+                                    width: 100%;
+                                    align-items: center;
+                                    padding: 10px 10px 10px 0;
+                                    gap: 10px;
+                                    .binp {
+                                    display: flex;
+                                    flex-direction: row;
+                                    width: 100%;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 10px;
+                                    border-radius: 99px;
+                                    border: #F4E9BF 1px solid;
+            }
+        }
+    }
+}
+    .right {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 18px;
+    width: 218px;
+    background-color: #FFF8EB;
+        .navbar1 {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+            .textbox {
+            display: flex;
+            flex-direction: column;
+                p {
+                font-size: 14px;
+                font-family: robreg;
+                color: #6E6E6E;
+                }
+                .boxtext {
+                display: flex;
+                align-items: center;
+
+                flex-direction: row;
+                padding: 4px 0;
+                gap: 10px;
+                    p {
+                    font-size: 16px;
+                    font-family: robmed;
+                    color: #393939;
+                    }
+                }
+            }
+                    .people {
+                    display: flex;
+                    flex-direction: column;
+                        p {
+                        font-size: 14px;
+                        font-family: robreg;
+                        color: #6E6E6E;
+                        }
+                        .bpeop {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 4px 0;
+                        justify-content: space-between;
+                            .name {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 10px;
+                                align-items: center;
+                            }
+                            .bclas {
+                                display: flex;
+                                width: 100px;
+                                align-items: center;
+                                justify-content: center;
+                                .boxclass {
+                                    background-color: #FAE6D2;
+                                    border-radius: 10px;
+                                    padding: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
  .modal {
             
             display: none;
@@ -396,6 +585,16 @@
                                  font-family: roblig;
                                  font-size: 14px;
                                  color: $maincolor;
+                             }
+                             .bbig {
+                                padding: 0px;
+                                display: flex;
+                                gap: 10px;
+                                font-family: robmed;
+                                font-size: 16px;
+                                color: $maincolor;
+                                background-color: #FFF8EB;
+                                text-align: start;
                              }
                          }
                      }
